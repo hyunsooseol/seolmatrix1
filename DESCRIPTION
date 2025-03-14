@@ -15,11 +15,8 @@ RoxygenNote: 7.3.2
 Imports: 
     janitor,
     jmvcore (>= 1.0.8),
-    knitr,
     R6,
     stats,
-    qgraph,
-    psych,
     lpSolve,
     irr,
     psy,
@@ -31,11 +28,8 @@ Imports:
     ShinyItemAnalysis,
     ahpsurvey,
     magrittr,
-    dplyr,
-    tidyr,
     corrplot,
     gtheory,
-    lme4,
     equate,
     rmcorr,
     lattice
