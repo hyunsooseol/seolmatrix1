@@ -61,7 +61,7 @@ concordanceClass <- if (requireNamespace('jmvcore'))
         }
       },
       
-      .plot = function(image,...) {
+      .plot = function(image,ggtheme, theme,...) {
         if (!self$options$plot)
           return(FALSE)
         
@@ -87,12 +87,12 @@ concordanceClass <- if (requireNamespace('jmvcore'))
           #    geom_text(data = tmp.lab, x = 0.5, y = 2.95, label = tmp.lab$lab) +
           coord_fixed(ratio = 1 / 1)
         
-        #plot <- plot + ggtheme
+        plot <- plot + ggtheme
         print(plot)
         TRUE
       },
       
-      .plot1 = function(image1,...) {
+      .plot1 = function(image1,ggtheme, theme,...) {
         if (!self$options$plot1)
           return(FALSE)
         
@@ -121,7 +121,7 @@ concordanceClass <- if (requireNamespace('jmvcore'))
           scale_x_continuous(name = "Average between measures") +
           scale_y_continuous(name = "Difference between measures")
         
-        #plot1 <- plot1 + ggtheme
+        plot1 <- plot1 + ggtheme
         print(plot1)
         TRUE
       },
