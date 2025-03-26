@@ -31,12 +31,12 @@ options:
       title: correlation coefficient
       default: TRUE
       
-    - name: ccp
+    - name: plot
       title: Concordance 
       type: Bool
       default: FALSE
       
-    - name: bap
+    - name: plot1
       title: Bland-Altman 
       type: Bool
       default: FALSE

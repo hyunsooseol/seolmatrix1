@@ -49,26 +49,26 @@ children:
             label: "Plots"
             children:
               - type: CheckBox
-                name: ccp
+                name: plot
                 style: list-inline
                 children:
                   - type: TextBox
                     name: width
                     format: number
-                    enable: (ccp)
+                    enable: (plot)
                   - type: TextBox
                     name: height
                     format: number
-                    enable: (ccp)
+                    enable: (plot)
               - type: CheckBox
-                name: bap
+                name: plot1
                 style: list-inline
                 children:
                   - type: TextBox
                     name: width1
                     format: number
-                    enable: (bap)
+                    enable: (plot1)
                   - type: TextBox
                     name: height1
                     format: number
-                    enable: (bap)
+                    enable: (plot1)
