@@ -172,7 +172,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           # k<-12
           # 0.62/(0.62 +2.787/12)
           
-          if (isTRUE(self$options$gmea)) {
+          if (self$options$gmea) {
             gmea <- gtheory::dstudy(gstudy.out, colname.objects = self$options$id)
             
             
@@ -229,7 +229,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           abs <- ds$var.error.abs
           
           
-          if (isTRUE(self$options$mea)) {
+          if (self$options$mea) {
             table <- self$results$mea
             
             row <- list()
@@ -307,7 +307,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           #-----------------------------------------------------
           # self$results$text$setContent(ds1)
           
-          if (isTRUE(self$options$item)) {
+          if (self$options$item) {
             ng <- self$options$ng
             res <- list()
             
@@ -347,7 +347,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           
           # G study: Observed variance and covariance matrix----------
           
-          if (isTRUE(self$options$mat)) {
+          if (self$options$mat) {
             mat <- g1$between$var.obs
             mat <- as.data.frame(mat)
             
@@ -373,7 +373,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           
           # D study: variance components--------
           
-          if (isTRUE(self$options$itemd)) {
+          if (self$options$itemd) {
             ng <- self$options$ng
             res <- list()
             
@@ -413,7 +413,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           
           # D study: Between universe score variance matrix----------
           
-          if (isTRUE(self$options$bmat)) {
+          if (self$options$bmat) {
             bmat <- ds1$between$var.universe
             bmat <- as.data.frame(mat)
             
@@ -440,7 +440,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           
           # D study (Composite table)------------
           
-          if (isTRUE(self$options$comp)) {
+          if (self$options$comp) {
             table <- self$results$comp
             
             # Measures of D study---------------
@@ -462,7 +462,7 @@ gtheoryClass <- if (requireNamespace('jmvcore', quietly = TRUE))
             
           }
           
-          if (isTRUE(self$options$bm)) {
+          if (self$options$bm) {
             table <- self$results$bm
             
             # measure---

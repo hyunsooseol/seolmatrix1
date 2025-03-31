@@ -75,7 +75,7 @@ corClass <- if (requireNamespace('jmvcore', quietly = TRUE))
           image$setState(mat1)
         }
         
-        if (isTRUE(self$options$poly)) {
+        if (self$options$poly) {
           #Polychoric correlation------
           corP <- psych::polychoric(data)
           dis <- as.dist(1 - corP$rho)
