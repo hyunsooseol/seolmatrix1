@@ -9,10 +9,6 @@ items:
       type: Html
       visible: True
 
-    - name:  text
-      title: ""
-      type:  Preformatted
-
     - name:  table
       title: Estimated Correlation
       type: Table
@@ -38,8 +34,7 @@ items:
       title: 'Concordance Plot'
       type: Image
       renderFun: .plot
-      visible: (plot)
-      requiresData: true
+      visible: (ccp)
       clearWith:
         - dep
         - covs
@@ -51,8 +46,7 @@ items:
       title: 'Bland-Altman Plot'
       type: Image
       renderFun: .plot1
-      visible: (plot1)
-      requiresData: true
+      visible: (bap)
       clearWith:
         - dep
         - covs
